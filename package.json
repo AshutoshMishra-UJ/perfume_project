@@ -1,0 +1,30 @@
+{
+  "name": "perfume-shop",
+  "version": "1.0.0",
+  "description": "A full-stack perfume shop website with React frontend and Node.js/MongoDB backend",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm install && npm run install-server && npm run install-client",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "perfume",
+    "shop",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Perfume Shop Team",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^8.18.0"
+  }
+}
